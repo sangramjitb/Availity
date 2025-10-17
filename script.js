@@ -15,7 +15,25 @@ const playlist = [
   'music/song11.mp3',
   'music/song12.mp3',
   'music/song13.mp3',
-  'music/song14.mp3'
+  'music/song14.mp3',
+    'music/song15.mp3',
+  'music/song16.mp3',
+  'music/song17.mp3',
+  'music/song18.mp3',
+  'music/song19.mp3',
+  'music/song20.mp3',
+  'music/song21.mp3',
+  'music/song22.mp3',
+  'music/song23.mp3',
+  'music/song24.mp3',
+  'music/song25.mp3',
+  'music/song26.mp3',
+  'music/song27.mp3',
+  'music/song28.mp3',
+  'music/song29.mp3',
+  'music/song30.mp3',
+  'music/song31.mp3',
+  'music/song32.mp3'
 
 
 
@@ -121,4 +139,5 @@ window._player = {
 };
 
 // If a track is not found, the console will show an error. Ensure files exist in /music
+
 
