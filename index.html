@@ -1,0 +1,85 @@
+<!--
+Place your music files inside the "music" folder next to this HTML file.
+Example:
+  /music/song1.mp3
+  /music/song2.mp3
+
+To add more songs: open `script.js` and add filenames to the `playlist` array or let the script automatically scan files when using a local server.
+
+Notes for GitHub Pages:
+- Commit the `music/` directory and audio files to the repo (Git doesn't track empty folders). Add at least one MP3 file like `song1.mp3` into `music/` before publishing to GitHub Pages.
+- GitHub Pages will serve the `music/` files as static assets.
+
+This page intentionally hides a music player behind a login UI. The Sign In button starts playback.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Availity Portal | Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="left">
+      <div class="brand">
+        <div style="margin-left: 60px;"><img src="./image/logo.png" alt="Availity Logo" width="280" height="auto"></div>    
+
+       <!--<img src="./image/logo.png" alt="Availity Logo" width="300" height="46">
+        <svg viewBox="0 0 96 32" width="140" height="46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">-->
+          <rect width="96" height="32" fill="none"/>
+          <g fill="none" fill-rule="evenodd">
+            <path d="M9 6 L15 6 L18 10 L12 16 L6 10 Z" fill="#ff9f1c"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="card">
+        <h1>Sign In</h1>
+
+        <form id="loginForm" onsubmit="return false;">
+          <label>User ID</label>
+          <input id="user" placeholder="Enter your user ID." autocomplete="username">
+
+          <label>Password</label>
+          <div class="passwordRow">
+            <input id="pass" type="password" placeholder="Enter your password." autocomplete="current-password">
+            <button type="button" class="eye" aria-label="toggle password" title="Toggle visibility">👁️</button>
+          </div>
+
+          <button id="signIn" class="primary">Sign In</button>
+        </form>
+
+        <div class="links">
+          <a href="#" id="forgot">Forgot your user ID?</a>
+          <a href="#" id="help">Forgot your password?</a>
+        </div>
+
+        <div class="note">
+          <strong>Note:</strong> Your Availity account and login credentials belong only to you. Sharing accounts may violate HIPAA regulations regarding data privacy.
+        </div>
+      </div>
+    </section>
+
+    <aside class="right">
+      <h2>New to Availity?</h2>
+      <p class="lead">Create a free account and discover all the benefits of using Availity.</p>
+
+      <ul class="features">
+        <li>Free, real-time access to hundreds of payers</li>
+        <li>Check eligibility, submit claims, collect patient payments and track ERAs</li>
+        <li>Update your provider profiles</li>
+        <li>Manage quality-of-care paperwork</li>
+      </ul>
+
+      <button class="outline">Create a Free Account</button>
+    </aside>
+  </main>
+
+  <!-- Hidden audio element used by JS. Controls are managed in script only. -->
+  <audio id="audioPlayer" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
