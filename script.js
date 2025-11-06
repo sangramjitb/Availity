@@ -5,8 +5,8 @@
 function generatePlaylist() {
   const playlist = [];
   // Assuming songs are named song1.mp3 to song32.mp3. Adjust range as needed.
-  for (let i = 1; i <= 130; i++) {
-    playlist.push(`music/song${i}.mp3`);
+  for (let i = 100; i <= 130; i++) {
+    playlist.push(`music/${i}.mp3`);
   }
   return playlist;
 }
@@ -127,3 +127,4 @@ window._player = {
 };
 
 // If a track is not found, the console will show an error. Ensure files exist in /music
+
