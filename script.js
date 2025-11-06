@@ -5,7 +5,7 @@
 function generatePlaylist() {
   const playlist = [];
   // Assuming songs are named song1.mp3 to song32.mp3. Adjust range as needed.
-  for (let i = 100; i <= 132; i++) {
+  for (let i = 1; i <= 132; i++) {
     playlist.push(`music/song${i}.mp3`);
   }
   return playlist;
